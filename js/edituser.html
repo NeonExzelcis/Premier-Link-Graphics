@@ -1,0 +1,83 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <form action="#" id="edituserform">
+                <input type="hidden" name="id">
+                <div class="row">
+                    <div class="form-group col-lg-6">
+                        <label for="uname">Username</label>
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text"><span class="fa fa-user"></span></div>
+                            </div>
+                            <input class="form-control form-control-sm" name="uname" id="uname" autocomplete="off" type="text" required>
+                        </div>
+                    </div>
+                    <div class="form-group col-lg-6">
+                        <label for="pass">Password</label>
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text"><span class="fa fa-user-lock"></span></div>
+                            </div>
+                            <input class="form-control form-control-sm" name="pass" id="pass" autocomplete="off" type="password" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-lg-6">
+                        <label for="fname">Fullname</label>
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text"><span class="fa fa-user-tie"></span></div>
+                            </div>
+                            <input class="form-control form-control-sm letter" name="fname" id="fname" autocomplete="off" type="text" required>
+                        </div>
+                    </div>
+                    <div class="form-group col-lg-6">
+                        <label for="prev">Previlege</label>
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text"><span class="fa fa-user-friends"></span></div>
+                            </div>
+                            <select name="prev" id="prev" class="form-control form-control-sm" autocomplete="off" required>
+                                <option value="1">ADMIN</option>
+                                <option value="2">EMPLOYEE</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-lg-6">
+                        <label for="cell">Cellphone Number</label>
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text"><span class="fa fa-mobile-alt"></span></div>
+                            </div>
+                            <input class="form-control form-control-sm number" name="cell" id="cell" autocomplete="off" type="text" required>
+                        </div>
+                    </div>
+                    <div class="form-group col-lg-6">
+                        <label for="br">Branch</label>
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text"><span class="fa fa-map-marked"></span></div>
+                            </div>
+                            <select class="form-control form-control-sm" name="br" id="br" autocomplete="off" type="text" required>
+                                <option value="1">Branch 1</option>
+                                <option value="2">Branch 2</option>
+                                <option value="3">Branch 3</option>
+                                <option value="4">Branch 4</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <button class="btn btn-success py-2 px-5" type="submit" id="submit"><i class="fa fa-save fa-lg"></i> Update</button>
+                        <button class="btn btn-secondary py-2 px-5" type="button" role="button" id="editbtn"><i class="fa fa-edit fa-lg"></i> Edit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

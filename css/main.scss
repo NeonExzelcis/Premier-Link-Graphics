@@ -1,0 +1,274 @@
+
+/* Light */
+@font-face {
+	font-family: "Roboto Condensed";
+	font-style: normal;
+	font-weight: 300;
+	src: local('Roboto Condensed Light'), local('RobotoCondensed-Light'), url("fonts/RobotoCondensed-Light.ttf") format('truetype');
+}
+@font-face {
+	font-family: "Roboto Condensed";
+	font-style: italic;
+	font-weight: 300;
+	src: local('Roboto Condensed Light Italic'), local('RobotoCondensed-LightItalic'), url("fonts/RobotoCondensed-LightItalic.ttf") format('truetype');
+}
+
+/* Normal */
+@font-face {
+	font-family: "Roboto Condensed";
+	font-style: normal;
+	font-weight: 400;
+	src: local('Roboto Condensed Regular'), local('RobotoCondensed-Regular'), url("fonts/RobotoCondensed-Regular.ttf") format('truetype');
+}
+@font-face {
+	font-family: "Roboto Condensed";
+	font-style: italic;
+	font-weight: 400;
+	src: local('Roboto Condensed Italic'), local('RobotoCondensed-Italic'), url("fonts/RobotoCondensed-Italic.ttf") format('truetype');
+}
+
+/* Bold */
+@font-face {
+	font-family: "Roboto Condensed";
+	font-style: normal;
+	font-weight: 700;
+	src: local('Roboto Condensed Bold'), local('RobotoCondensed-Bold'), url("fonts/RobotoCondensed-Bold.ttf") format('truetype');
+}
+@font-face {
+	font-family: "Roboto Condensed";
+	font-style: italic;
+	font-weight: 700;
+	src: local('Roboto Condensed Bold Italic'), local('RobotoCondensed-BoldItalic'), url("fonts/RobotoCondensed-BoldItalic.ttf") format('truetype');
+}
+/* cyrillic-ext */
+@font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 500;
+    src: local('Roboto Medium Italic'), local('Roboto-MediumItalic'), url("fonts/Roboto-MediumItalic.ttf") format('truetype');
+
+}
+/* cyrillic-ext */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Roboto Medium'), local('Roboto-Medium'), url("fonts/Roboto-Medium.ttf") format('truetype');
+
+}
+// @import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed');
+*{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: .5px;
+    body{
+        .font-initial{
+            font-size: initial;
+        }
+        .popover-header{
+            color: #212121;
+        }
+        
+        .text-row-danger{
+            color: #f5f5f5;
+        }
+        /* width */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: transparent; 
+        }
+        
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #444444; 
+            border-radius: 10px;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #212121; 
+        }
+        .card{
+            border: none;
+        }
+        // .btn-toggleheader {
+        //     display: none;
+        // }
+        // .btn-fullscreen {
+        //     display: none;
+        // }
+        // .btn-borderless {
+        //     display: none;
+        // }
+        .no-zoom {
+            .krajee-default.file-preview-frame, .krajee-default.file-preview-frame:hover{
+                margin: 0;
+                padding: 0;
+                border: none;
+                box-shadow: none;
+                text-align: center;
+            }
+            .file-input {
+                display: table-cell;
+                width: auto;
+            }
+            .kv-file-zoom {
+                display: none;
+            }
+        }
+        .centerdiv{
+            margin: 0 auto;
+        }
+        .fv,.done,.approve,.modify,.edit, .lock-acc, .unlock-acc {
+            font-weight: bold;
+            max-width: 80px;
+            width: 80px;
+            font-family: 'Roboto Condensed', 'sans-serif';
+            text-transform: uppercase;
+        }
+        h1, h2, h3, h4, h5, h6{
+            font-family: 'Roboto Condensed', 'sans-serif';
+            font-weight: 700;
+            letter-spacing: .1px;
+        }
+        #table{
+            thead{
+                font-family: 'Roboto Condensed', 'sans-serif';
+                text-transform: uppercase;
+                font-weight: bold;
+                letter-spacing: -1px;
+                tr{
+                    th{
+                        border: 1px solid #6c757d;
+                    }
+                }
+            }
+            tbody{
+                tr{
+                    td{
+                        border: .5px solid #6c757d;
+                    }
+                }
+            }
+        }
+        #login-logo{
+            margin-left: 20px;
+        }
+        #tryfont{
+            font-family: 'Roboto Condensed', 'sans-serif';
+            font-size: 2.3em;
+            font-weight: 900;
+            letter-spacing: 0;
+        }
+        .bg_img{
+            background-image: url('../img/codingman.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            overflow-y: auto;
+            height: 100%;
+            width: 100%;
+            .bg_id{
+                height: 100%;
+                width: 100%;
+                overflow-y: auto;
+                background-color:#27358e59;
+                position: absolute;
+                
+            }
+        }
+        a{
+            text-decoration: none;
+        }
+        .jumbotron{
+            background-color: #fbf000c4;
+            max-height: 570px;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+        
+        .modal{
+            
+            #alerthome{
+                position: absolute;
+                z-index: 99999;
+                width: 100%;
+                top: 0;
+                left: 0;
+                right: 0;
+                #alert{
+                    margin: 0 auto;
+                }
+            }
+           .modal-dialog{
+                .modal-content{
+                   .modal-header{
+                       .close{
+                           span{
+                                font-size: 15px;
+                           }  
+                       }
+                   } 
+                   .modal-body{
+                       textarea{
+                           resize: none;
+                           height: 70px;
+                           max-height: 100px;
+                       }
+                   }
+                }
+            } 
+        }
+        nav{
+            background-color: #3b4993d4;
+            .navbar-brand{
+                margin: 0;
+                padding: 0;
+            }
+            #navbarSupportedContent{
+                ul{
+                    li{
+                        a{
+                            text-decoration: none;
+                        }
+                    }
+                    .dropdown-color {
+                        background-color: #3b4993d4;
+                    }
+                    .rm-useroption{
+                        .dropdown-menu{
+                            #logout:hover{
+                                transition: 0.5s background-color;
+                                background-color:#dc3545;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .alert-con-height{
+            height: 100px;
+        }
+        .jumbo-login{
+            padding-top: 30px;
+            padding-bottom: 30px; 
+        }
+        .login-container-centered{
+            margin: 0 auto;
+            .login-centered{
+                margin-top: 20px;
+            }
+            .msg-alert{
+                margin-top: 60px;
+                height: 60px;
+            }
+        }
+        .main-container{
+            margin-top: 5em;
+        }
+    }
+}

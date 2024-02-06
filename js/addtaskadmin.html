@@ -1,0 +1,244 @@
+<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<form action="#" id="adminaddnewtask">
+					<div class="row">
+						<div class="form-group col-lg-6">
+							<label for="fname">Fullname</label>
+							<div class="input-group mb-2">
+								<div class="input-group-prepend">
+									<div class="input-group-text"><span class="fa fa-user"></span>
+									</div>
+								</div>
+								<input class="form-control form-control-sm person-name" name="fname" id="fname" maxlength="100" autocomplete="off" type="text" required>
+							</div>
+						</div>
+						<div class="form-group col-lg-6">
+							<label for="cell">Cellphone Number</label>
+							<div class="input-group mb-2">
+								<div class="input-group-prepend">
+									<div class="input-group-text"><span class="fa fa-mobile-alt"></span>
+									</div>
+								</div>
+								<input class="form-control form-control-sm cell-num" name="cell" id="cell" autocomplete="off" maxlength="11" type="text" required>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-lg-6 mx-auto">
+							<label for="serv">Type of Service</label>
+							<div class="input-group mb-2">
+								<div class="input-group-prepend">
+									<div class="input-group-text"><span class="fa fa-lightbulb"></span>
+									</div>
+								</div>
+								<select class="form-control form-control-sm serv" name="serv" id="serv" autocomplete="off" maxlength="100" required>
+									<option value="1">Tarpaulin</option>
+									<option value="2">Vinyl Sticker</option>
+									<option value="3">Mug Press</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group col-lg-6" id="contypeofsize">
+							<label for="typeofsize">Type of Size</label>
+							<div class="input-group mb-2">
+								<div class="input-group-prepend">
+									<div class="input-group-text"><span class="fa fa-ruler-combined"></span>
+									</div>
+								</div>
+								<select class="form-control form-control-sm serv" name="typeofsize" id="typeofsize" autocomplete="off" maxlength="100" required>
+									<option value="1">Standard Size</option>
+									<option value="2">Custom Size</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="row" id="standardSize">
+						<div class="form-group col-lg-3">
+							<label for="width1">Width</label>
+							<div class="input-group mb-2">
+								<div class="input-group-prepend">
+									<div class="input-group-text"><span class="fa fa-ruler-horizontal"></span>
+									</div>
+								</div>
+								<select class="form-control form-control-sm serv" name="width1" id="width1" autocomplete="off" maxlength="100" required>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="9">9</option>
+									<option value="10">10</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group col-lg-3">
+							<label for="height1">Height</label>
+							<div class="input-group mb-2">
+								<div class="input-group-prepend">
+									<div class="input-group-text"><span class="fa fa-ruler-vertical"></span>
+									</div>
+								</div>
+								<select class="form-control form-control-sm serv" name="height1" id="height1" autocomplete="off" maxlength="100" required>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="9">9</option>
+									<option value="10">10</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group col-lg-3">
+							<label for="quan1">Quantity</label>
+							<div class="input-group mb-2">
+								<div class="input-group-prepend">
+									<div class="input-group-text"><span class="fa fa-sort-numeric-up"></span>
+									</div>
+								</div>
+								<input type="text" class="form-control form-control-sm size" maxlength="3" id="quan1" name="quan1" required>
+							</div>
+						</div>
+						<div class="form-group col-lg-3 mt-4 pt-2">
+							<div class="input-group mb-2">
+								<div class="input-group-prepend">
+									<div class="input-group-text">
+										<input type="checkbox" id="nodesign1" name="nodesign1">
+									</div>
+								</div>
+								<label for="nodesign1">&nbsp;Design</label>
+							</div>
+						</div>
+					</div>
+					<div class="row" id="seamingSize">
+						<div class="form-group col-lg-3">
+							<label for="width2">Width</label>
+							<div class="input-group mb-2">
+								<div class="input-group-prepend">
+									<div class="input-group-text"><span class="fa fa-ruler-horizontal"></span>
+									</div>
+								</div>
+								<input type="text" maxlength="2" class="form-control form-control-sm size" id="width2" name="width2" required>
+							</div>
+						</div>
+						<div class="form-group col-lg-3">
+							<label for="height2">Height</label>
+							<div class="input-group mb-2">
+								<div class="input-group-prepend">
+									<div class="input-group-text"><span class="fa fa-ruler-vertical"></span>
+									</div>
+								</div>
+								<input type="text" maxlength="2" class="form-control form-control-sm size" id="height2" name="height2" required>
+							</div>
+						</div>
+						<div class="form-group col-lg-3">
+							<label for="quan2">Quantity</label>
+							<div class="input-group mb-2">
+								<div class="input-group-prepend">
+									<div class="input-group-text"><span class="fa fa-sort-numeric-up"></span>
+									</div>
+								</div>
+								<input type="text" class="form-control form-control-sm size" maxlength="2" id="quan2" name="quan2" required>
+							</div>
+						</div>
+						<div class="form-group col-lg-3 mt-4 pt-2">
+							<div class="input-group mb-2">
+								<div class="input-group-prepend">
+									<div class="input-group-text">
+										<input type="checkbox" id="nodesign2" name="nodesign2">
+									</div>
+								</div>
+								<label for="nodesign2">&nbsp;Design</label>
+							</div>
+						</div>
+					</div>
+					<div class="row" id="mugAndHeat">
+						<div class="form-group col-lg-3">
+							<label for="quan3">Quantity</label>
+							<div class="input-group mb-2">
+								<div class="input-group-prepend">
+									<div class="input-group-text"><span class="fa fa-sort-numeric-up"></span>
+									</div>
+								</div>
+								<input type="text" class="form-control form-control-sm size" maxlength="3" id="quan3" name="quan3" required>
+							</div>
+						</div>
+						<div class="form-group col-lg-3 mt-4 pt-2">
+							<div class="input-group mb-2">
+								<div class="input-group-prepend">
+									<div class="input-group-text">
+										<input type="checkbox" id="nodesign3" name="nodesign3">
+									</div>
+								</div>
+								<label for="nodesign3">&nbsp;Design</label>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-lg-6">
+							<label for="tp">Total Price</label>
+							<div class="input-group mb-2">
+								<div class="input-group-prepend">
+									<div class="input-group-text"><span class="fa fa-file-invoice-dollar"></span>
+									</div>
+								</div>
+								<input class="form-control form-control-sm money" name="tp" id="tp" autocomplete="off" maxlength="6" type="text" required readonly>
+							</div>
+						</div>
+						<div class="form-group col-lg-6">
+							<label for="dp">Down Payment</label>
+							<div class="input-group mb-2">
+								<div class="input-group-prepend">
+									<div class="input-group-text"><span class="fa fa-hand-holding-usd"></span>
+									</div>
+								</div>
+								<input class="form-control form-control-sm money" name="dp" id="dp" autocomplete="off" maxlength="6" type="text" required>
+							</div>
+						</div>	
+					</div>
+					<div class="row">
+						<div class="form-group col-lg-6">
+							<label for="expdate">Expected Date</label>
+							<div class="input-group mb-2">
+								<div class="input-group-prepend">
+									<div class="input-group-text"><span class="fa fa-calendar-check"></span>
+									</div>
+								</div>
+								<input class="form-control form-control-sm" name="expdate" id="expdate" autocomplete="off" type="text" maxlength="20" required>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-lg-12 no-zoom text-center mx-auto">
+							<div class="text-left">
+								<label class="control-label" for="attach">Attachment</label>
+							</div>
+							<input id="attach" name="attach" type="file" required>
+							<div id="attach-error"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-lg-12">
+							<label for="addet">Additional Details</label>
+							<div class="input-group mb-2">
+								<div class="input-group-prepend">
+									<div class="input-group-text"><span class="fa fa-clipboard"></span>
+									</div>
+								</div>
+								<textarea class="form-control form-control-sm" name="addet" id="addet" autocomplete="off" type="text"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-2">
+							<button class="btn btn-primary py-2 px-5" type="submit"><i class="fa fa-save fa-lg spinner"></i> Save</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
